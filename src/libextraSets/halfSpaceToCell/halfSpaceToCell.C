@@ -49,7 +49,7 @@ halfSpaceToCell::halfSpaceToCell(const polyMesh& mesh, const point& origin,
 halfSpaceToCell::halfSpaceToCell(const polyMesh& mesh,
     const dictionary& dict)
   :
-    halfSpaceToCell(mesh, dict.lookup("origin"), dict.lookup("n"))
+    halfSpaceToCell(mesh, dict.get<point>("origin"), dict.get<vector>("n"))
 {}
 
 

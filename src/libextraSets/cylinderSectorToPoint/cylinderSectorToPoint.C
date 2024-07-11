@@ -95,7 +95,7 @@ cylinderSectorToPoint::cylinderSectorToPoint(const polyMesh& mesh,
   :
     cylinderSectorToPoint(mesh, dict.lookup("origin"), dict.lookup("axis"),
         dict.lookup("ref"), readScalar(dict.lookup("angle0"))/180.0*PI,
-        readScalar(dict.lookup("angle1"))/180.0*PI)
+        dict.get<point>("angle1")/180.0*PI)
 {}
 
 

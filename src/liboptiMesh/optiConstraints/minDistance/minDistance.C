@@ -22,7 +22,7 @@ minDistance::minDistance(const fvMesh& mesh, const dictionary& dict) :
   absDist_(dict.lookupOrDefault<scalar>("absDist", 0.0))
 {
   // fixed point set
-  pointSet fixedSet(mesh, dict.lookup("fixedSet"));
+  pointSet fixedSet(mesh, dict.get<word>("fixedSet"));
 
   // init the lists
   active_ = List<bool>(this->size(), true);

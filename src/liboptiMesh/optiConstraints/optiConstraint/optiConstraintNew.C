@@ -8,7 +8,7 @@ autoPtr<optiConstraint> optiConstraint::New(const fvMesh& mesh, const dictionary
   const word t(dict.lookup("type"));
 
 
-  rtstConstructorTable::iterator cstrIter =
+ auto  cstrIter =
     rtstConstructorTablePtr_->find(t);
 
   if (cstrIter == rtstConstructorTablePtr_->end())

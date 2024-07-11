@@ -1,5 +1,4 @@
 halfSpaceToCell/halfSpaceToCell.C
-cylinderSectorToPoint/cylinderSectorToPoint.C
 minHexAspectRatio/minHexAspectRatio.C
 
 LIB = $(FOAM_USER_LIBBIN)/libextraSets
